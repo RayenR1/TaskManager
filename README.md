@@ -1,6 +1,7 @@
 # TaskManager
-Front-end:angular by Raed jlassi @JlassiRAed
-back-end:spring by Rayen jlassi @RayenR1
+#Front-end:angular by Raed jlassi @JlassiRAed
+#back-end:spring by Rayen jlassi @RayenR1
+
 English Description:
 This application is a task management system designed to help organizations manage and track tasks assigned to their employees. It includes features such as:  
   -User Authentication and Authorization: Users can log in and access the system based on their roles (e.g., employee, director).
