@@ -1,0 +1,6 @@
+
+“	java:S114
+"QRename this interface name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(§±šà8Ûúñò…2J$b04f356e-4bb5-429f-86fe-6e78a91266ea
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Âæƒ§8Ûúñò…2J$a70959ec-ec37-4a7c-b264-ccdd82e6837c
+‡
+java:S1128"DRemove this unused import 'com.TaskManagement.Task.models.UserRole'.(˜¯ñ¹8Þúñò…2J$f951f90a-3596-46ce-85ed-2dbedbe0a2eb

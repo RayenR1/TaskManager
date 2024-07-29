@@ -1,0 +1,73 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„¥’ìÿÿÿÿÿ8ÜôÃİ‹2J$7309102d-2b51-4991-9332-fe7f859b2f25
+Š
+java:S1192ƒ"FDefine a constant instead of duplicating this literal "false" 4 times.(Šˆµ¸8åôÃİ‹2J$e8e5f5ea-e63b-4a76-9943-c9b281a41195
+Š
+java:S1192F"GDefine a constant instead of duplicating this literal "admin" 16 times.(ÇË½à8åôÃİ‹2J$0365737e-d982-47dc-80a7-71487e93dd16
+¿
+java:S1192K"wDefine a constant instead of duplicating this literal "Vous n'avez pas le droit d'accÃ©der Ã  cette ressource" 4 times.(èîıíÿÿÿÿÿ8æôÃİ‹2J$5ad439db-41ef-49ef-821f-5c0c09ee6521
+
+java:S1192H"GDefine a constant instead of duplicating this literal "mnadem" 4 times.(¸ØÌøÿÿÿÿ8æôÃİ‹2J$0a6730f9-e21d-406a-8c6d-c659571253be
+Œ
+java:S1192@"IDefine a constant instead of duplicating this literal "Bearer " 13 times.(Ôé£ö8æôÃİ‹2J$aa239e42-73ca-41ee-9ca9-c28eb903d09c
+ƒ	java:S107-"AConstructor has 9 parameters, which is greater than 7 authorized.(¤Ê°ç8ëôÃİ‹2J$7f1486fe-cb13-4057-b3da-7be1a4e4d906
+j
+java:S1125F"'Remove the unnecessary boolean literal.(ÇË½à8ïôÃİ‹2J$e61df414-ae9e-4ff7-8b70-98da12e0cd92
+Â
+java:S6204G"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(çÊÁ¾şÿÿÿÿ8ïôÃİ‹2J$960669e3-8a77-4e14-b004-1194db76c46d
+j
+java:S1125Z"'Remove the unnecessary boolean literal.(ÇË½à8òôÃİ‹2J$6321d993-aeb5-48a5-8ae7-12290b527ae2
+j
+java:S1125k"'Remove the unnecessary boolean literal.(ÇË½à8óôÃİ‹2J$86f23b3c-7606-437b-952f-7f3b5da4c094
+j
+java:S1125~"'Remove the unnecessary boolean literal.(ÇË½à8ôôÃİ‹2J$a3116a26-bce2-4998-8a50-eefc894f2ad0
+k
+java:S1125›"'Remove the unnecessary boolean literal.(£Ğ•Ú8øôÃİ‹2J$b53ca99e-75af-4fc9-9b88-489099136a7d
+k
+java:S1125œ"'Remove the unnecessary boolean literal.(¦Øí8øôÃİ‹2J$36435c18-9c1f-41c6-a938-199de2e7b5b4
+„	java:S125 "<This block of commented-out lines of code should be removed.(ÆÌª¿şÿÿÿÿ8ùôÃİ‹2J$239dc8f3-94ff-4f8a-a891-a0f8e257f77a
+p
+java:S1125â"'Remove the unnecessary boolean literal.(–ı¢ªÿÿÿÿÿ8€õÃİ‹2J$86c616a3-9fd5-44a8-bf11-e92e01c68f2f
+–	java:S100ë"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­¦¾ûÿÿÿÿ8€õÃİ‹2J$ebd02288-751e-47de-a7c2-08176afd21ac
+k
+java:S1125ó"'Remove the unnecessary boolean literal.(ÇË½à8õÃİ‹2J$4a444a99-5fe7-41a6-9b66-5626c5c38443
+‘	java:S100ü"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›Ü„ó8õÃİ‹2J$32b2e564-f17d-4ffe-981b-2a783aac0d58
+k
+java:S1125„"'Remove the unnecessary boolean literal.(ÇË½à8‚õÃİ‹2J$7cdede72-6eb2-4a09-8204-472b855fb0c1
+–	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷±Éáÿÿÿÿÿ8ƒõÃİ‹2J$b183cec6-5d55-43fe-8fcd-2f9fc59e9609
+k
+java:S1125•"'Remove the unnecessary boolean literal.(ÇË½à8ƒõÃİ‹2J$1b84dfee-570e-4cce-877c-69b6bc8094a7
+–	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ß©¾øÿÿÿÿ8„õÃİ‹2J$8dea0be2-ef2d-4978-b5f7-ed5e7f642595
+k
+java:S1125¦"'Remove the unnecessary boolean literal.(ÇË½à8„õÃİ‹2J$c56af41e-2b63-4818-b9f1-37e4f4eb62f6
+–	java:S100¯"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÁõŠùÿÿÿÿ8…õÃİ‹2J$6c23b0b9-e9a6-4ec5-abe7-a5d304aac923
+k
+java:S1125·"'Remove the unnecessary boolean literal.(ÇË½à8†õÃİ‹2J$3ee8a47a-9f1e-4448-9b5f-f50a80a02265
+
+java:S1854Ó";Remove this useless assignment to local variable "societe".(¶ÌİË8ˆõÃİ‹2J$0ab0f991-ebb5-425c-9f88-bd566f84f83e
+p
+java:S1481Ó",Remove this unused "societe" local variable.(¶ÌİË8ˆõÃİ‹2J$9d119cdf-9a7e-48b5-81cb-c7999082611f
+k
+java:S1125Ö"'Remove the unnecessary boolean literal.(ÇË½à8‰õÃİ‹2J$d073b863-dfb0-4145-a7a6-a4dd82c79123
+
+java:S1854æ";Remove this useless assignment to local variable "societe".(¶ÌİË8‰õÃİ‹2J$5e776c32-88de-4fb2-8185-744f6503902e
+p
+java:S1481æ",Remove this unused "societe" local variable.(¶ÌİË8ŠõÃİ‹2J$f0af9a1b-9276-4f6f-828d-8ba11eb87e5c
+k
+java:S1125ç"'Remove the unnecessary boolean literal.(ÇË½à8ŠõÃİ‹2J$e93aa1b7-c28d-4922-9f5a-e9aa5e659386
+y
+java:S2209í"5Change this instance-reference to a static reference.(İş©ä8ŠõÃİ‹2J$dbb37340-0eb3-42e8-998f-bd70075b1e5b
+y
+java:S2209î"5Change this instance-reference to a static reference.(¼ËÏ8ŠõÃİ‹2J$d954cf34-fa6a-4fdc-aaf3-2525d85dfdad
+~
+java:S2209ï"5Change this instance-reference to a static reference.(íøÀêùÿÿÿÿ8‹õÃİ‹2J$00af75bc-0f77-4bc2-b642-6ea11f62402b
+~
+java:S2209ğ"5Change this instance-reference to a static reference.(Ô¸Éˆøÿÿÿÿ8‹õÃİ‹2J$78fa05ac-fa1b-47a9-864e-b04cdcdc7f59
+~
+java:S2209ñ"5Change this instance-reference to a static reference.(ÈÁ²†üÿÿÿÿ8‹õÃİ‹2J$0322eaf6-aeef-4538-9834-c3f66898f963
+y
+java:S2209ò"5Change this instance-reference to a static reference.(ı×ƒ·8‹õÃİ‹2J$311dee22-c5be-456d-9996-0b478efd5a04
+y
+java:S2209õ"5Change this instance-reference to a static reference.(Âé8ŒõÃİ‹2J$de780b96-ea4a-41a6-ac4c-9323913f4c68
+y
+java:S2209÷"5Change this instance-reference to a static reference.(æ³ÿ’8ŒõÃİ‹2J$bcf7e811-d7de-4aa6-929b-ff7a0438e5e8

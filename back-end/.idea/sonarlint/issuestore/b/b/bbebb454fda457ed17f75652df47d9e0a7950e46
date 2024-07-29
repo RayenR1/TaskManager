@@ -1,0 +1,8 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(γμ«»J$89f13225-1ad3-4558-a723-7e3b4a55f017
+
+java:S1128"BRemove this unused import 'com.TaskManagement.Task.models.Equipe'.(‡«ϋ±όÿÿÿÿ8χ ες…2J$4c405c6b-8f91-4845-b7c0-69356ad7ff64
+„
+java:S1128"ARemove this unused import 'com.TaskManagement.Task.models.tache'.(Κ¶›Ò8¥ες…2J$8e6d08a5-7bb6-4b98-bb09-5f439d8a1982
+s
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(χ‰ξƒ8·°Ης…2J$3da54c86-a09e-4903-9b35-ab763890a631

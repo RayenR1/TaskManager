@@ -1,0 +1,12 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ñ˜èÂýÿÿÿÿ8…ì‚“‰2J$9a90a699-eb02-4b47-b2e4-1b458a6f2d5e
+k
+java:S5411<"(Use a primitive boolean expression here.(êÛÈÍ8…ì‚“‰2J$b669d2ba-e82b-4394-8283-cedfbac6b75c
+¥
+java:S14887"]Immediately return this expression instead of assigning it to the temporary variable "users".(åïÛúþÿÿÿÿ8Ì«“‰2J$afce1d01-9576-4d8d-b48d-59970ef42e86
+‘	java:S100Ž"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜½ñõ8–ì‚“‰2J$d4c73bd6-98f8-47a2-af38-81ffc8660226
+‘	java:S100—"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(þª½Â8—ì‚“‰2J$92e2449c-e05c-469a-842e-66457bbfe8ec
+¾
+java:S6204¿"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(œçÖß8‹ŸþÑ2J$1d61585a-7bc6-4637-a231-7d41f82e2bfa
+†
+java:S1128"DRemove this unused import 'com.TaskManagement.Task.dto.RegisterDto'.(§‚êU8‹ŸþÑ2J$3dbcd295-7210-4392-9e37-4b2ffaeef1e0

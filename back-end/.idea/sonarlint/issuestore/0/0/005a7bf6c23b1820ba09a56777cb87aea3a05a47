@@ -1,0 +1,24 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ê°³ûûÿÿÿÿ8ŞÉŒßŠ2J$f0d0c523-a066-4e2c-8b99-a45ecb4ce075
+º
+java:S1192X"rDefine a constant instead of duplicating this literal "vous n avez pas le droit de faire cette operation" 3 times.(ÁÅÖìûÿÿÿÿ8áÉŒßŠ2J$67e019f3-d08f-4e43-a86b-895237f6b223
+Œ
+java:S1192*"IDefine a constant instead of duplicating this literal "director" 8 times.(¤¤ª‰8áÉŒßŠ2J$f72cbdb3-1d58-4d77-a598-815c95972031
+
+java:S1192X"FDefine a constant instead of duplicating this literal "false" 4 times.(ÁÅÖìûÿÿÿÿ8áÉŒßŠ2J$9835735c-923b-4a3e-9364-5a021e8392ed
+‹
+java:S1192$"HDefine a constant instead of duplicating this literal "Bearer " 8 times.(Ôé£ö8áÉŒßŠ2J$624f1388-fd31-4230-b56b-3812f0401b9f
+–
+java:S16120"NReplace this lambda with method reference 'projetService::convertToProjetDto'.(ı¦šıüÿÿÿÿ8éÉŒßŠ2J$be4606b9-cd13-437d-9317-7eb020db299b
+i
+java:S1125S"'Remove the unnecessary boolean literal.(Ï—-8ìÉŒßŠ2J$e9201e63-904b-4535-80e5-613461eaeb40
+i
+java:S1125b"'Remove the unnecessary boolean literal.(Ï—-8îÉŒßŠ2J$777ecc05-b365-41d0-9171-79fc72fa3fbf
+i
+java:S1125q"'Remove the unnecessary boolean literal.(Ï—-8ïÉŒßŠ2J$c99bde42-c98b-4c70-8ee5-142144f302f9
+j
+java:S1125†"'Remove the unnecessary boolean literal.(Ï—-8ñÉŒßŠ2J$9b14c2ec-f5b9-4caf-adb9-34c83d52eafe
+j
+java:S1125•"'Remove the unnecessary boolean literal.(Ï—-8òÉŒßŠ2J$db46c431-cec4-447f-b520-95734c075988
+j
+java:S1125¤"'Remove the unnecessary boolean literal.(Ï—-8ôÉŒßŠ2J$0de18f64-1967-4cbc-a88c-0b2e8471178d

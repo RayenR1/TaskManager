@@ -1,0 +1,52 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„¥’ìÿÿÿÿÿ8–Ìúˆ2J$ba0231a5-ab08-4f9d-8f73-0a3f2c112903
+º
+java:S1192M"rDefine a constant instead of duplicating this literal "vous n avez pas le droit de faire cette operation" 3 times.(ÁÅÖìûÿÿÿÿ8‘–Ìúˆ2J$aba53b28-c3b1-43fb-8fb5-09d3076f4b65
+‹
+java:S1192&"IDefine a constant instead of duplicating this literal "director" 5 times.(Ï—-8‘–Ìúˆ2J$d9c80345-0e6c-409a-a01d-2305f39f6442
+
+java:S1192M"FDefine a constant instead of duplicating this literal "false" 3 times.(ÁÅÖìûÿÿÿÿ8‘–Ìúˆ2J$64573795-adbc-445d-83e1-a18324fbf187
+‹
+java:S1192 "HDefine a constant instead of duplicating this literal "Bearer " 5 times.(Ôé£ö8«’Ø½Š2J$e2c85734-592b-4b38-98a4-8e867b3e014b
+~
+java:S1854%";Remove this useless assignment to local variable "societe".(¶ÌİË8“–Ìúˆ2J$677e017c-d40e-4705-a6fc-25334b9d5dcb
+o
+java:S1481%",Remove this unused "societe" local variable.(¶ÌİË8”–Ìúˆ2J$35764d34-e499-4e77-917f-d9bb5cebfebc
+i
+java:S1125&"'Remove the unnecessary boolean literal.(Ï—-8”–Ìúˆ2J$46b68ab7-2b67-4e77-87fa-f7dac4f03335
+~
+java:S18545";Remove this useless assignment to local variable "societe".(¶ÌİË8––Ìúˆ2J$6f2f1d93-cc64-4aae-b093-3b4e685ad9be
+o
+java:S14815",Remove this unused "societe" local variable.(¶ÌİË8˜–Ìúˆ2J$719e7009-ab87-4933-9d8b-ee0fe3418118
+i
+java:S11256"'Remove the unnecessary boolean literal.(Ï—-8˜–Ìúˆ2J$28837729-ed62-4c26-ac31-60f5f835699c
+~
+java:S1854G";Remove this useless assignment to local variable "societe".(¶ÌİË8˜–Ìúˆ2J$2c06f248-ea85-46cf-915d-f8cb9d1c4e45
+‰
+java:S1854I"ARemove this useless assignment to local variable "updatedProjet".(¯ª÷àúÿÿÿÿ8“–Ìúˆ2J$b533e4b8-a94e-4306-8dec-fddb02918521
+o
+java:S1481G",Remove this unused "societe" local variable.(¶ÌİË8™–Ìúˆ2J$5b09cd6a-c76a-4457-84d8-d5956448a06e
+i
+java:S1125H"'Remove the unnecessary boolean literal.(Ï—-8™–Ìúˆ2J$eb4ba0a1-0127-4f45-b092-10aa61ac2bc2
+z
+java:S1481I"2Remove this unused "updatedProjet" local variable.(¯ª÷àúÿÿÿÿ8•–Ìúˆ2J$987d767f-c078-4c8d-8c5e-00165183781e
+~
+java:S1854Z";Remove this useless assignment to local variable "societe".(¶ÌİË8„ Íúˆ2J$6a455e41-242b-489d-bb31-9d87af9fa38e
+‰
+java:S1854\"ARemove this useless assignment to local variable "updatedProjet".(Í†¿âùÿÿÿÿ8––Ìúˆ2J$df322b3e-ecf5-44e3-9955-d431719c9b1e
+o
+java:S1481Z",Remove this unused "societe" local variable.(¶ÌİË8„ Íúˆ2J$70e0794e-8987-44bd-8c39-cec833050174
+i
+java:S1125["'Remove the unnecessary boolean literal.(Ï—-8„ Íúˆ2J$eeccf75c-c1be-4e1f-8f1d-21401fa0e184
+z
+java:S1481\"2Remove this unused "updatedProjet" local variable.(Í†¿âùÿÿÿÿ8˜–Ìúˆ2J$b5544950-6437-4d77-bcd4-4036dd232587
+~
+java:S1854k";Remove this useless assignment to local variable "societe".(¶ÌİË8… Íúˆ2J$f4daca4f-84d2-470e-af99-8a0f40638b19
+‚
+java:S1854n":Remove this useless assignment to local variable "projet".(¾ –ùÿÿÿÿ8˜–Ìúˆ2J$e6aa7ae2-7b54-4b2c-bed4-a44942e9a107
+o
+java:S1481k",Remove this unused "societe" local variable.(¶ÌİË8… Íúˆ2J$197e3652-54df-421a-abfa-f3c70e1604a9
+i
+java:S1125l"'Remove the unnecessary boolean literal.(Ï—-8† Íúˆ2J$7d320060-b8c4-4b79-9000-4dcd46c22677
+s
+java:S1481n"+Remove this unused "projet" local variable.(¾ –ùÿÿÿÿ8×¾»üˆ2J$033b9b7d-5899-475d-a209-7f262aeb1d00

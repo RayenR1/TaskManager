@@ -1,0 +1,23 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„¥’ìÿÿÿÿÿ8ºÛİŠ2J$2a928952-adf6-4205-9f47-aa50f7f8c12b
+Œ
+java:S1192D"IDefine a constant instead of duplicating this literal "director" 3 times.(¤¤ª‰8‰ÑÙ¹‹2J$21b6a39d-a0c5-4952-83e2-e8e06d349138
+Œ
+java:S1192&"IDefine a constant instead of duplicating this literal "employee" 4 times.(¶åù³8§ºÛİŠ2J$9dd41b6b-07f4-4b04-8e83-c0577e4ad66c
+j
+java:S1125&"'Remove the unnecessary boolean literal.(¶åù³8´ºÛİŠ2J$552e73f7-042c-4ef7-af2e-d3cc7193104b
+½
+java:S6204+"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8²ÿ¨ö2J$a106a701-9820-4b5c-9b44-ffe2595492ca
+j
+java:S11258"'Remove the unnecessary boolean literal.(¶åù³8ÃºÛİŠ2J$3dff1129-2bc0-42d4-bd50-4623fabce6a7
+½
+java:S6204H"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8·ÿ¨ö2J$00df3d42-044e-44c2-a229-6b27aa55cdbb
+i
+java:S1125S"'Remove the unnecessary boolean literal.(Ï—-8åÑÙ¹‹2J$256f252a-ea3f-4ba4-95f1-20d8ed007e56
+i
+java:S1125^"'Remove the unnecessary boolean literal.(Ï—-8ìÑÙ¹‹2J$7e902b07-9155-47c3-b8d6-a91d114f298a
+½
+java:S6204p"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8½ÿ¨ö2J$eaae6f71-5620-4a50-9dab-5916effee862
+~	java:S125z"<This block of commented-out lines of code should be removed.(˜ÑÜï8õÑÙ¹‹2J$28c0a087-7ec8-4f8d-9f90-133c0a45da94
+½
+java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8Àÿ¨ö2J$abc5e02d-5505-4b80-a6a6-984252aa174c

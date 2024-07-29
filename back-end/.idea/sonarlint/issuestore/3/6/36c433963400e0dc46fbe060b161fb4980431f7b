@@ -1,0 +1,39 @@
+
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(–æ8ï¨Â¼‹2J$d0b9a2fa-75d3-4b9d-b48f-ec4bf86e1d4e
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ñ˜èÂıÿÿÿÿ8ğ¨Â¼‹2J$af6e0658-3bdc-4945-b19e-a44af1058dcb
+’
+java:S1192="ODefine a constant instead of duplicating this literal "Task not found" 3 times.(¤Ä†É8ò¨Â¼‹2J$d3c485e1-eda1-4761-861f-c6be3c79a234
+i	java:S1315""Add a default case to this switch.(³ÒÂŒÿÿÿÿÿ8ø¨Â¼‹2J$e65839dd-563a-4b86-991f-8f12b4077f0f
+½
+java:S6204E"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ú¨Â¼‹2J$f634b7a6-2bdc-4446-9c13-9cd2051ab4b0
+r	java:S106K"+Replace this use of System.out by a logger.(Ï¼Äÿøÿÿÿÿ8û¨Â¼‹2J$185b0465-3c09-4c6c-a7f2-92af4c9da6b3
+m	java:S106V"+Replace this use of System.out by a logger.(ĞçõÑ8ü¨Â¼‹2J$c18f6928-aa91-4404-b90d-7b8b745596f8
+r	java:S106]"+Replace this use of System.out by a logger.(³óÇÿÿÿÿÿ8ı¨Â¼‹2J$ff2419fc-e417-46a3-b2ba-64415203bd00
+r	java:S106c"+Replace this use of System.out by a logger.(ø€Ëüÿÿÿÿ8ı¨Â¼‹2J$6a6bdec7-ab8d-4d50-a9e1-cac3ed13c3e1
+m	java:S106k"+Replace this use of System.out by a logger.(Şà´¢8ı¨Â¼‹2J$6393849d-1a95-4834-abd1-21ab135b1d2c
+½
+java:S6204q"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ı¨Â¼‹2J$a12a2fae-7664-45e5-a3a6-3b4d2bf8b3f1
+m	java:S106s"+Replace this use of System.out by a logger.(ïÉİ¡8ş¨Â¼‹2J$c21bd976-2bdf-4894-8f83-de131b5785f0
+m	java:S106v"+Replace this use of System.out by a logger.(ï’êè8ş¨Â¼‹2J$9ec4ff6a-bd9f-46e8-835c-1ffccc240b00
+r	java:S106y"+Replace this use of System.out by a logger.(ê“•™øÿÿÿÿ8ÿ¨Â¼‹2J$1ef4d3e5-af81-438b-b802-35c3ffa2e936
+ƒ	java:S125}"<This block of commented-out lines of code should be removed.(ÑÕ´øÿÿÿÿ8€©Â¼‹2J$9663237f-eb4c-40d4-a067-182bbdf6dd53
+s	java:S106‹"+Replace this use of System.out by a logger.(é«Œ“úÿÿÿÿ8€©Â¼‹2J$08b4a842-86f5-4bbd-9da1-1bd09ed981fc
+¾
+java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8€©Â¼‹2J$16f7d325-8798-4498-8afe-bbb480f4207f
+n	java:S106’"+Replace this use of System.out by a logger.(Úªôó8©Â¼‹2J$68d51481-b504-4d58-9e37-a3c3e714c2af
+s	java:S106–"+Replace this use of System.out by a logger.(®­Û şÿÿÿÿ8©Â¼‹2J$fbd42e04-8e05-42aa-9c75-587fcb57471a
+¾
+java:S6204˜"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ã¤£’8©Â¼‹2J$0221abab-b4c0-46dc-bdc9-1a8da91362bc
+¾
+java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8‚©Â¼‹2J$dc201ee2-8c63-4fac-8b1b-2adee2bb58fc
+p
+java:S1905"'Remove this unnecessary cast to "long".(äŒ­³øÿÿÿÿ8‚©Â¼‹2J$2d06e375-795c-4315-89c0-a93dad464ff1
+n	java:S106 "+Replace this use of System.out by a logger.(–ÀÍ8‚©Â¼‹2J$0657ad2b-0c7a-4fb2-849b-d6ee93e326bb
+Ã
+java:S6204­"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(Á‰Ã£şÿÿÿÿ8ÛÉßõ2J$ab6dc09f-471c-4311-b7ed-9cdc402486c9
+¾
+java:S6204º"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(“…şç8ßÉßõ2J$fa92b61e-debf-4c15-ab1f-9b5ea38c4438
+¾
+java:S6204»"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(“…şç8àÉßõ2J$94902abe-ec32-4958-9f94-1a044d84d3fc
+t
+java:S1068"1Remove this unused "projetService" private field.(ğğÈş8‰ÁÃ¼‹2J$708888a8-55d0-4f91-a656-b731c236229f

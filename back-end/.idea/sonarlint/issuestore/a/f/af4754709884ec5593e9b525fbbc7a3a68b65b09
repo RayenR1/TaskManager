@@ -1,0 +1,10 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„¥’ìÿÿÿÿÿ8èßæ§‡2J$939f6044-bfaa-4887-a406-78205b7487b9
+9
+java:S16436"Use a StringBuilder instead.(™ëë÷8š ˜‰2
+o
+java:S1125&"'Remove the unnecessary boolean literal.(â’Ó¢üÿÿÿÿ8´ê§‡2J$3062e7fb-960e-4467-aa4b-346c20c752d9
+_
+java:S18542"=Remove this useless assignment to local variable "etatToken".(·¨³Üÿÿÿÿÿ8  ˜‰2
+P
+java:S14812".Remove this unused "etatToken" local variable.(·¨³Üÿÿÿÿÿ8¡ ˜‰2

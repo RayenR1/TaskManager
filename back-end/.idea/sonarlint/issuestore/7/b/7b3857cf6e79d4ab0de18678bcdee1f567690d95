@@ -1,0 +1,20 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ñ˜èÂıÿÿÿÿ8ÄÈ£»‹2J$3e63a8dd-3432-43c2-b7a9-d8e5ae53d01f
+”
+java:S3655!"LCall "projet.isPresent()" or "!projet.isEmpty()" before accessing the value.(¹ã§œùÿÿÿÿ8ÈÈ£»‹2J$ea4e6f74-669d-42cc-8208-abf4fb37a930
+¦
+java:S11927"^Define a constant instead of duplicating this literal "Projet non trouvÃ© pour l'id " 7 times.( ñ•åùÿÿÿÿ8ÉÈ£»‹2J$c2591850-f197-40af-a1a2-3c59ab1e5917
+o
+java:S1905="'Remove this unnecessary cast to "long".(¸…ñ×ùÿÿÿÿ8ÑÈ£»‹2J$725e9782-fe88-4865-8046-157b66f7ccd2
+o
+java:S1905F"'Remove this unnecessary cast to "long".(¸…ñ×ùÿÿÿÿ8ÔÈ£»‹2J$f5ff43b2-c009-4c9d-88fc-ae935142eb2b
+o
+java:S1905M"'Remove this unnecessary cast to "long".(¸…ñ×ùÿÿÿÿ8ÖÈ£»‹2J$74332874-8c2f-4b00-91e7-3fd0645753f9
+o
+java:S1905]"'Remove this unnecessary cast to "long".(¸…ñ×ùÿÿÿÿ8ÙÈ£»‹2J$3054109f-2c3c-4607-a5b7-2b4f86409a68
+o
+java:S1905b"'Remove this unnecessary cast to "long".(¸…ñ×ùÿÿÿÿ8ÛÈ£»‹2J$6109d9c4-f39d-4c3e-aef7-9ad5eeba9be1
+Ã
+java:S6204…"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(Á‰Ã£şÿÿÿÿ8ÑøÒõ2J$616aa9e3-89d2-47ce-85be-0f21971b49ac
+¾
+java:S6204’"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(“…şç8ÕøÒõ2J$cbd46e85-e329-4420-a37e-6f68857294df

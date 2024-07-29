@@ -1,0 +1,78 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶†¿ûÿÿÿÿ8ò†ã‡2J$f9177dca-5f5c-45fb-87f4-b7baf6c31ede
+ 
+java:S1488H"]Immediately return this expression instead of assigning it to the temporary variable "roles".(úÂÉŞ8ô†ã‡2J$400f0e31-22ec-4735-8363-d8458e90bab7
+Â
+java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(¯ê›€ùÿÿÿÿ8€‡ã‡2J$44415ae9-b84e-40c6-9ae4-c9b00d43a4f0
+Â
+java:S6204 "zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(‘Õ»Èüÿÿÿÿ8‡ã‡2J$fbfa5fff-8b69-464a-bb35-d5ec21d29a69
+½
+java:S6204'"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8…‡ã‡2J$a731c755-7776-4d3f-ba61-1df2b3a44239
+z
+java:S1874)"2Remove this use of "setSubject"; it is deprecated.(¥¥ıÿÿÿÿ8†‡ã‡2J$573d4eb5-af02-47ab-b1cf-5551a42cac8c
+{
+java:S18741"3Remove this use of "setIssuedAt"; it is deprecated.(¥«®òÿÿÿÿÿ8ş½ã‡2J$4fad0840-1352-4773-a95d-3a57aa360193
+}
+java:S18742"5Remove this use of "setExpiration"; it is deprecated.(ÚóúÎüÿÿÿÿ8ş½ã‡2J$2bec6396-46ba-4837-b84b-3dbe415a093c
+x
+java:S18743"0Remove this use of "signWith"; it is deprecated.(ƒÜá›ûÿÿÿÿ8†‡ã‡2J$ff754312-8c0e-44a2-88dc-232d8f513604
+‚
+java:S18743":Remove this use of "SignatureAlgorithm"; it is deprecated.(ƒÜá›ûÿÿÿÿ8†‡ã‡2J$c9eaca88-382c-49ba-976e-41cec3d72470
+‚
+java:S18743":Remove this use of "SignatureAlgorithm"; it is deprecated.(ƒÜá›ûÿÿÿÿ8ÿ½ã‡2J$25bde4a6-0e32-4c4a-af0b-8a007292889d
+w
+java:S18749"5Remove this use of "setSigningKey"; it is deprecated.(‘­8ˆ‡ã‡2J$8b835d25-03e2-4aee-9865-f5fb115abf35
+~
+java:S1874;"6Remove this use of "parseClaimsJws"; it is deprecated.(ëÙ–ºıÿÿÿÿ8ˆ‡ã‡2J$88fd929a-9ae4-4b14-987b-0eb92004f261
+r
+java:S1874<"/Remove this use of "getBody"; it is deprecated.(ÊÄ¿Ì8ˆ‡ã‡2J$5a6ec5d6-2350-4c3a-b456-87848a860865
+w
+java:S1874B"5Remove this use of "setSigningKey"; it is deprecated.(‘­8Š‡ã‡2J$aa3561d2-2bcb-455d-af7e-a38ff5277385
+~
+java:S1874D"6Remove this use of "parseClaimsJws"; it is deprecated.(ëÙ–ºıÿÿÿÿ8Š‡ã‡2J$a6e3049b-3e0b-4388-b8ee-ac348229076b
+r
+java:S1874E"/Remove this use of "getBody"; it is deprecated.(ÊÄ¿Ì8Š‡ã‡2J$c3a6424f-51b1-4784-bad2-3781445f0a11
+w
+java:S1874U"5Remove this use of "setSigningKey"; it is deprecated.(‘­8Œ‡ã‡2J$eda8619e-b6bc-4531-9c34-91a564b46203
+~
+java:S1874W"6Remove this use of "parseClaimsJws"; it is deprecated.(ëÙ–ºıÿÿÿÿ8Œ‡ã‡2J$3c14477a-c71f-4435-a032-4232fad11761
+r
+java:S1874X"/Remove this use of "getBody"; it is deprecated.(ÊÄ¿Ì8Œ‡ã‡2J$59a9909e-9a4f-4fed-9170-94bf94289042
+w
+java:S1874_"5Remove this use of "setSigningKey"; it is deprecated.(‘­8‡ã‡2J$e0c0e02b-6c21-473a-b8f2-dbab6e9070ae
+~
+java:S1874a"6Remove this use of "parseClaimsJws"; it is deprecated.(ëÙ–ºıÿÿÿÿ8‡ã‡2J$81d916b6-236d-413d-ae6e-d84dee11c4f8
+r
+java:S1874b"/Remove this use of "getBody"; it is deprecated.(ÊÄ¿Ì8‡ã‡2J$b19204c6-9ea2-4c67-a36b-97eef8ffe502
+w
+java:S1874h"5Remove this use of "setSigningKey"; it is deprecated.(‘­8‡ã‡2J$3821ba21-1b42-4f49-8415-32b00482b309
+~
+java:S1874j"6Remove this use of "parseClaimsJws"; it is deprecated.(ëÙ–ºıÿÿÿÿ8‡ã‡2J$c1232136-9bc0-4263-93a0-608b2b19a4f9
+r
+java:S1874k"/Remove this use of "getBody"; it is deprecated.(ÊÄ¿Ì8‡ã‡2J$7f2522b8-1ed9-41d2-8750-c69f036ebea2
+w
+java:S1874s"5Remove this use of "setSigningKey"; it is deprecated.(‘­8’‡ã‡2J$d39af2cb-b4bd-4d7e-b48a-be44b53b1a50
+~
+java:S1874u"6Remove this use of "parseClaimsJws"; it is deprecated.(ëÙ–ºıÿÿÿÿ8’‡ã‡2J$a4b76536-0446-4d00-8b20-0f5f67ecbaad
+r
+java:S1874v"/Remove this use of "getBody"; it is deprecated.(ÊÄ¿Ì8’‡ã‡2J$de34b4f9-d89f-47fa-8356-6a1248434178
+w
+java:S1874|"5Remove this use of "setSigningKey"; it is deprecated.(‘­8”‡ã‡2J$8bdffc42-e1d0-4701-aca5-d129e582aa29
+~
+java:S1874~"6Remove this use of "parseClaimsJws"; it is deprecated.(ëÙ–ºıÿÿÿÿ8”‡ã‡2J$52016ea1-de8d-454a-8ac9-467ce83f5325
+r
+java:S1874"/Remove this use of "getBody"; it is deprecated.(ÊÄ¿Ì8—ì‡2J$94600d58-aed3-49ce-b699-f69601dccb53
+x
+java:S1874ˆ"5Remove this use of "setSigningKey"; it is deprecated.(‘­8—ì‡2J$703a6d63-106c-4c6d-a5c0-954584437ef2
+
+java:S1874Š"6Remove this use of "parseClaimsJws"; it is deprecated.(ëÙ–ºıÿÿÿÿ8—ì‡2J$7582e21a-0379-490b-bfd6-7a19f98c5264
+s
+java:S1874‹"/Remove this use of "getBody"; it is deprecated.(ÊÄ¿Ì8ºÚŸª‡2J$61186818-c43a-4643-9ea3-b887ec02993b
+
+java:S6437‘"6Revoke and change this password, as it is compromised.(ö±’Öûÿÿÿÿ8“‡ã‡2J$800d6aff-dc93-4dd1-821c-d0e2959cd6f5
+~
+java:S1874‘"5Remove this use of "setSigningKey"; it is deprecated.(ö±’Öûÿÿÿÿ8ºÚŸª‡2J$7393fb68-d181-47d1-ac3e-e12a9c1dd31f
+
+java:S1874‘"6Remove this use of "parseClaimsJws"; it is deprecated.(ö±’Öûÿÿÿÿ8ºÚŸª‡2J$6cb2bda2-499c-47a0-9564-87a376ba517d
+Š
+java:S1128"BRemove this unused import 'java.nio.file.attribute.UserPrincipal'.(€¢ãÑùÿÿÿÿ8¾ã‡2J$1c4bcc35-d966-4f35-9898-e194785d099b

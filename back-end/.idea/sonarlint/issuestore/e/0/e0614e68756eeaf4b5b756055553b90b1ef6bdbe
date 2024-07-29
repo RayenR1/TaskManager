@@ -1,0 +1,6 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ñ˜èÂýÿÿÿÿ8Õö†é‰2J$288f9272-a36d-491c-8694-9474603d15c8
+½
+java:S6204("zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8Úö†é‰2J$0f923cad-954d-4d1c-a96c-5fb4dc6ecb43
+˜
+java:S1128"PRemove this unused import 'org.springframework.scheduling.annotation.Scheduled'.(‚¡®Üûÿÿÿÿ8Þö†é‰2J$f8e3db40-3cc5-4b8d-b4a4-72e4d9682112

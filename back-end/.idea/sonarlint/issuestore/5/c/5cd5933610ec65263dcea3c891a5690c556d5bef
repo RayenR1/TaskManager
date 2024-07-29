@@ -1,0 +1,34 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„¥’ìÿÿÿÿÿ8æÑÙõ2J$1fe108c5-15a2-455b-b9cc-c6282f6bf5fb
+º
+java:S1192Z"rDefine a constant instead of duplicating this literal "vous n avez pas le droit de faire cette operation" 3 times.(ÁÅÖìûÿÿÿÿ8ëÑÙõ2J$f3ef51c5-de29-4881-bdb8-5a1f6ea65f13
+Œ
+java:S1192,"IDefine a constant instead of duplicating this literal "director" 8 times.(¤¤ª‰8ìÑÙõ2J$ba8979d1-46d9-4902-adbb-a02a39fef727
+
+java:S1192Z"FDefine a constant instead of duplicating this literal "false" 4 times.(ÁÅÖìûÿÿÿÿ8ìÑÙõ2J$36b2a81b-a414-4c28-8c72-6231c24033ab
+‹
+java:S1192&"HDefine a constant instead of duplicating this literal "Bearer " 8 times.(Ôé£ö8ìÑÙõ2J$b787a3d6-32ad-43c9-b863-4341fa68a80d
+½
+java:S62041"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8öÑÙõ2J$db27297e-71a1-4b6a-bf3a-e57d112628e6
+Â
+java:S62042"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(¼É‡øÿÿÿÿ8¾ñ¬ö2J$c622e4dc-03d2-48a0-bbf2-c677df254b87
+i
+java:S14529"&Remove usage of generic wildcard type.(©¡Ç²8ùÑÙõ2J$d3957e8a-a455-4ef1-a591-a6f35be6b1b8
+i
+java:S1125U"'Remove the unnecessary boolean literal.(Ï—-8ıÑÙõ2J$924ebbd9-13a3-4320-8d7c-1ff11bef3d3c
+i
+java:S1125d"'Remove the unnecessary boolean literal.(Ï—-8€ÒÙõ2J$3777abb4-e2d5-4a78-9737-58d3cfcbda31
+i
+java:S1125s"'Remove the unnecessary boolean literal.(Ï—-8ƒÒÙõ2J$1b92c2ef-5dac-4760-9b88-f4c56271786f
+j
+java:S1125ˆ"'Remove the unnecessary boolean literal.(Ï—-8‡ÒÙõ2J$4ac06077-2606-47f4-bbdd-eaa3c3aa5faf
+k
+java:S1905Š"'Remove this unnecessary cast to "long".(®¨ºÿ8‡ÒÙõ2J$a598098e-efca-4b60-b10b-4892dc1c5291
+j
+java:S1125—"'Remove the unnecessary boolean literal.(Ï—-8ŠÒÙõ2J$50253b90-3c61-4f83-a701-f0c82facaa87
+k
+java:S1905™"'Remove this unnecessary cast to "long".(®¨ºÿ8‹ÒÙõ2J$94e7f61f-26c6-4821-a49b-1187c256809e
+j
+java:S1125¦"'Remove the unnecessary boolean literal.(Ï—-8ÒÙõ2J$5d41c80b-5b23-4d94-9e27-fe7ee18d5015
+k
+java:S1905¨"'Remove this unnecessary cast to "long".(®¨ºÿ8ÒÙõ2J$881b40be-e74c-40bd-bdc3-7ff841783421

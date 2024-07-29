@@ -1,0 +1,26 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„¥’ìÿÿÿÿÿ8‡£ûè‰2J$ddbec966-82b5-41d4-b189-c7e26e7714cb
+º
+java:S11924"rDefine a constant instead of duplicating this literal "vous n avez pas le droit de faire cette operation" 3 times.(ÁÅÖìûÿÿÿÿ8Öºûè‰2J$ff8b2af5-d557-419d-a089-26de1889ad7b
+‹
+java:S1192+"IDefine a constant instead of duplicating this literal "director" 3 times.(Ï—-8ûÒÙ¹‹2J$78ffedec-8ef4-4b6c-9f43-3ce3645cb6b9
+
+java:S11920"FDefine a constant instead of duplicating this literal "false" 5 times.(êÈÄæÿÿÿÿÿ8ˆ£ûè‰2J$4e42c133-94bf-48f1-aecc-046d53e667e0
+‹
+java:S1192%"HDefine a constant instead of duplicating this literal "Bearer " 3 times.(Ôé£ö8şÒÙ¹‹2J$1bc8b31f-f5b2-4e69-a032-99a1b778fd32
+~
+java:S1854*";Remove this useless assignment to local variable "societe".(¶ÌİË8‚ÓÙ¹‹2J$6f2590f6-16b9-4e0c-972f-7f850f92f426
+o
+java:S1481*",Remove this unused "societe" local variable.(¶ÌİË8„ÓÙ¹‹2J$bcc04704-9ed7-4561-83ea-a886880dd929
+i
+java:S1125+"'Remove the unnecessary boolean literal.(Ï—-8„ÓÙ¹‹2J$21842e01-7e95-45fe-b30e-62fea44586d2
+i
+java:S1125-"'Remove the unnecessary boolean literal.(œ¥Ü,8‹£ûè‰2J$c2efbab5-e5fd-40ba-a83b-308313023ee8
+~
+java:S1854@";Remove this useless assignment to local variable "societe".(¶ÌİË8†ÓÙ¹‹2J$e41a75ba-a114-421b-8b5e-cac98c9d864c
+o
+java:S1481@",Remove this unused "societe" local variable.(¶ÌİË8‡ÓÙ¹‹2J$c13eb42d-473a-4458-839a-b519df4d6d09
+i
+java:S1125A"'Remove the unnecessary boolean literal.(Ï—-8‡ÓÙ¹‹2J$70d443ea-3fb7-484a-93a2-903dd2a88072
+i
+java:S1125X"'Remove the unnecessary boolean literal.(Ï—-8ŠÓÙ¹‹2J$38836948-7bf4-4490-a307-95ba86b219d6

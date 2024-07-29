@@ -1,0 +1,18 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ê°³ûûÿÿÿÿ8ı×ÁŞŠ2J$bc24a3c4-4769-4f1e-b483-c98e2f85809c
+Œ
+java:S1192@"IDefine a constant instead of duplicating this literal "director" 3 times.(¤¤ª‰8ÿ×ÁŞŠ2J$a8f35b94-e48b-4279-9485-a97f9adc08b0
+Œ
+java:S1192("IDefine a constant instead of duplicating this literal "employee" 3 times.(¶åù³8ÿ×ÁŞŠ2J$d1dde284-e3b9-41f2-b451-c7d9cf1bc155
+j
+java:S1125("'Remove the unnecessary boolean literal.(¶åù³8†ØÁŞŠ2J$cbb5b0ad-e155-49db-8b29-c326ec1ba088
+j
+java:S11255"'Remove the unnecessary boolean literal.(¶åù³8ˆØÁŞŠ2J$b51cba81-247e-4234-ae28-646296c34e50
+”
+java:S1612C"LReplace this lambda with method reference 'tacheService::convertToTacheDto'.(¡ÔğŸûÿÿÿÿ8­óÈŞŠ2J$52b5a141-24d0-4ad6-b53b-e0117ceb0587
+i
+java:S1125O"'Remove the unnecessary boolean literal.(Ï—-8ŠØÁŞŠ2J$8f466cab-c94c-4924-8c2a-0ecb9163ec25
+i
+java:S1125Z"'Remove the unnecessary boolean literal.(Ï—-8ŒØÁŞŠ2J$4bf5aa87-4c85-4dfc-850e-30e73e4ba87a
+
+java:S1612k"LReplace this lambda with method reference 'tacheService::convertToTacheDto'.(‹ö×æ8·óÈŞŠ2J$5cec47cb-fc1e-4e4d-ab73-63d31beb5d9f

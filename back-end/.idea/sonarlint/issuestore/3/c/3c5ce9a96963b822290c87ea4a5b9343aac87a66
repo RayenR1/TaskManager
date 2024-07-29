@@ -1,0 +1,18 @@
+
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶†¿ûÿÿÿÿJ$48683355-25f9-4b24-9274-dd6d2923cf4b
+ˆ
+java:S1128"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤Šúÿÿÿÿ8êàÒÊ†2J$f99c3843-cd04-44d2-bd79-f17a970f6ef5
+“
+java:S1128"KRemove this unused import 'org.springframework.security.config.Customizer'.(Ïóœ¬ùÿÿÿÿ8ëàÒÊ†2J$e9ead225-7086-412d-992e-72b3381a0d9d
+µ
+java:S1128"rRemove this unused import 'org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer'.(Ç¼Î8ëàÒÊ†2J$12d8457d-3e43-4569-8b6d-30781d5ce469
+©
+java:S1128"aRemove this unused import 'org.springframework.security.web.authentication.HttpStatusEntryPoint'.(ÛĞ£åÿÿÿÿÿ8ëàÒÊ†2J$b5aa7b1c-87c1-4d49-ae15-5feb823f7d8a
+£
+java:S1128"`Remove this unused import 'org.springframework.security.web.util.matcher.AntPathRequestMatcher'.(¼¸ö8ëàÒÊ†2J$c6e1a53b-0dc2-4d83-b573-969d671ae2c6
+™
+java:S1128"QRemove this unused import 'org.springframework.web.cors.CorsConfigurationSource'.(ŒºÏøşÿÿÿÿ8ëàÒÊ†2J$8a4667e0-936d-4b48-9d75-44cd909cdaea
+u
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ìàÒÊ†2J$49d01a43-b192-4dc6-904c-6e31afaa4080
+y
+java:S1068!"6Remove this unused "userDetailsService" private field.(çÆÇ³8³ÏÉ…2J$3de8e6fc-245b-4f22-9c34-f600dd5e9666

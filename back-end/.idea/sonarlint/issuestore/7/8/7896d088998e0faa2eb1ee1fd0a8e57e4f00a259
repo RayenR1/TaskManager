@@ -1,0 +1,19 @@
+
+”	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ç‚¦ºøÿÿÿÿ8Éà ›‰2J$6ed69c96-7467-4d41-9987-1842bc471927
+“	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹˜À™8Éà ›‰2J$1447375d-4905-4ef1-b099-6bbfabff083a
+˜	java:S1173"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äË©¿ùÿÿÿÿ8Éà ›‰2J$16bd03b8-acd7-47d8-90f3-f1ecf834a879
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ñ˜èÂýÿÿÿÿ8Éà ›‰2J$2f00f959-00e8-4f27-b854-17c7b14583ef
+z
+java:S2589#"7Remove this expression which always evaluates to "true"(ÏÕþÆ8Éà ›‰2J$63962dff-a489-4f3d-b161-9b2ffda75e03
+z
+java:S25898"7Remove this expression which always evaluates to "true"(ÏÕþÆ8Éà ›‰2J$4f78f4dd-f6fd-40d8-9912-40d35cd6907c
+z
+java:S2589#"7Remove this expression which always evaluates to "true"(ÏÕþÆ8Éà ›‰2J$0cf0bfd8-48e8-46c0-8230-bf822a039051
+z
+java:S25898"7Remove this expression which always evaluates to "true"(ÏÕþÆ8Éà ›‰2J$ba9c516e-7be8-4c60-a49f-73e810f8fa22
+r
+java:S1066#"/Merge this if statement with the enclosing one.(ÏÕþÆ8Éà ›‰2J$cad6c486-76be-4411-8ff0-e1a76b3bb23b
+r
+java:S10668"/Merge this if statement with the enclosing one.(ÏÕþÆ8²Ù¡›‰2J$b2ba9d71-2ba6-4a7c-ae0d-851af1043aaf
+|
+java:S1068"4Remove this unused "projetRepository" private field.(îäßþúÿÿÿÿ8Ðà ›‰2J$70cbb573-e454-40af-9ed0-8508a03dd5b8
