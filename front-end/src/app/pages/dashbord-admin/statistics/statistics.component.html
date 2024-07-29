@@ -1,0 +1,107 @@
+<div class="container custom">
+    <!-- Première ligne -->
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="top-bar">
+                <div class="card card-stats w-100 mb-3">
+                    <div class="card-header card-header-warning card-header-icon d-flex align-items-center">
+                        <p-avatarGroup styleClass="mb-3">
+                            <p-avatar 
+                                icon="pi pi-user" 
+                                styleClass="mr-2" 
+                                size="large" 
+                                [style]="{ 'background-color': '#e3e1ee', color: '#00ff88' }" 
+                                shape="circle" />
+                            <p-avatar 
+                                label="{{nbrOnline}}" 
+                                styleClass="mr-2" 
+                                [style]="{ 'background-color': '#689f38', color: '#fff' }" 
+                                shape="circle" 
+                                size="large" />
+                        </p-avatarGroup>
+                        <p-meterGroup [value]="value" />
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <span class="text-success">{{(nbrOnline * 100) / nbrUsers | number:'1.0-0'}}%</span>
+                        <span>of all users</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card custom-card mb-4">
+                <div class="card-header custom-card-header">
+                    <div class="custom-card-icon">
+                        <p-avatar icon="pi pi-link" styleClass="mr-2" [style]="{ 'background-color': '#dee9fc', color: '#c800c8' }" size="xlarge"></p-avatar>
+                    </div>
+                    <p class="custom-card-category">Number of Teams</p>
+                    <h3 class="custom-card-title">{{nbrTeams}}<small> user</small></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deuxième ligne -->
+    <div class="row mt-3">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card custom-card mb-4">
+                <div class="card-header custom-card-header">
+                    <div class="custom-card-icon">
+                        <p-avatar icon="pi pi-users" styleClass="mr-2" [style]="{ 'background-color': '#dee9fc' }" size="xlarge"></p-avatar>
+                    </div>
+                    <p class="custom-card-category">Number of users</p>
+                    <h3 class="custom-card-title">{{nbrUsers}}<small> user</small></h3>
+                </div>
+                <div class="custom-card-footer">
+                    <span class="text-success">{{(nbrUsers * 100) / nbrUsers | number:'1.0-0'}}%</span>
+                    <span>of all users</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card custom-card mb-4">
+                <div class="card-header custom-card-header">
+                    <div class="custom-card-icon">
+                        <p-avatar icon="pi pi-user" styleClass="mr-2" [style]="{ 'background-color': '#dee9fc', color: '#FF4B2B' }" size="xlarge"></p-avatar>
+                    </div>
+                    <p class="custom-card-category">Number of Admin</p>
+                    <h3 class="custom-card-title">{{nbrAdmins}}<small> user</small></h3>
+                </div>
+                <div class="custom-card-footer">
+                    <span class="text-success">{{(nbrAdmins * 100) / nbrUsers | number:'1.0-0'}}%</span>
+                    <span>of all users</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card custom-card mb-4">
+                <div class="card-header custom-card-header">
+                    <div class="custom-card-icon">
+                        <p-avatar icon="pi pi-user" styleClass="mr-2" [style]="{ 'background-color': '#dee9fc', color: '#2700b4' }" size="xlarge"></p-avatar>
+                    </div>
+                    <p class="custom-card-category">Number of Director</p>
+                    <h3 class="custom-card-title">{{nbrDirectors}}<small> user</small></h3>
+                </div>
+                <div class="custom-card-footer">
+                    <span class="text-success">{{(nbrDirectors * 100) / nbrUsers | number:'1.0-0'}}%</span>
+                    <span>of all users</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card custom-card mb-4">
+                <div class="card-header custom-card-header">
+                    <div class="custom-card-icon">
+                        <p-avatar icon="pi pi-user" styleClass="mr-2" [style]="{ 'background-color': '#dee9fc', color: '#00b415' }" size="xlarge"></p-avatar>
+                    </div>
+                    <p class="custom-card-category">Number of Employee</p>
+                    <h3 class="custom-card-title">{{nbrEmployees}}<small> user</small></h3>
+                </div>
+                <div class="custom-card-footer">
+                    <span class="text-success">{{(nbrEmployees * 100) / nbrUsers | number:'1.0-0'}}%</span>
+                    <span>of all users</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

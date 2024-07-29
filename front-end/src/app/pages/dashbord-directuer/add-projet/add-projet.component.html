@@ -1,0 +1,27 @@
+<div class="card p-4 mx-auto" style="max-width: 600px;">
+    <form  #f="ngForm" (ngSubmit)="onsubmit()">
+        <div class="mb-3">
+            <p-inputGroup>
+                <button type="button" pButton icon="pi pi-check" class="p-button-success" style="width: 100px;" [disabled]="true"></button>
+                <input type="text" pInputText placeholder="Project Name" class="form-control" style="flex: 1;" name="projectname" [(ngModel)]="ProjectName"  #fn="ngModel" required/>
+            </p-inputGroup>
+            <div *ngIf="!fn.errors?.['required']" class="valid-feedback">
+                Looks good!
+            </div>
+            <div *ngIf="fn.errors?.['required']&&fn.touched" class="invalid-feedback">
+                Please choose a Last name
+            </div>
+            
+        </div>
+        <div class="mb-3">
+            <p-floatLabel>
+                <textarea id="float-input" rows="5" cols="30" pInputTextarea class="form-control" [(value)]="description"></textarea>
+                <label for="float-input">Project Description</label>
+            </p-floatLabel>
+        </div>
+        <div class="d-flex justify-content-between">
+            <button class="mr-3" pButton pRipple label="Save" class="p-button-success" style="width: 100px;" [disabled]="f.invalid" type="submit"></button>
+            <p-button  label="Return" rounded="true" routerLink="../listProjet" styleClass="p-button-secondary"></p-button>
+        </div>
+   </form>
+</div>

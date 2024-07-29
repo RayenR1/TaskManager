@@ -1,0 +1,22 @@
+<div class="card container mb-4 ">
+    <h5 class="card-header text-danger">WARNING</h5>
+    <div class="card-body">
+      <h5 class="card-title">Are you sure you want to delete this user?</h5>
+      <h6>UserID={{id}}</h6>
+      <p class="card-text">If you want to continue the user deletion process, please enter your password.</p>
+      <div class="input-group mb-3 ">
+        <input type="password" class="form-control" placeholder="Password" [(ngModel)]="password" [ngClass]="getClassObject(p)" #p="ngModel" style="max-width: 300px;" minlength="8" required>
+      </div>
+      <a routerLink="../../listusers" class="btn btn-primary me-2">Cancel</a>
+      <button class="btn btn-danger me-2" [disabled]="condition" name="delete" (click)="delete()" type="submit">Delete</button>
+    </div>
+</div>
+
+<div class="card border-warning mb-3 container mb-4 " *ngIf="error">
+    <div class="card-header bg-warning text-dark">ERROR</div>
+    <div class="card-body">
+      <h5 class="card-title">The request for deletion has been denied.</h5>
+      <p>The request was rejected because either the password is incorrect or you are attempting to delete an admin.</p>
+      
+    </div>
+</div>

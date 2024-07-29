@@ -1,0 +1,91 @@
+<div class="container-custom">
+    <nav class="navbar custom-navbar">
+        <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/login">
+            <img src="favicon.ico" alt="1" width="30" height="24" class="d-inline-block align-text-top">
+            <span class="ms-3 mt-3">Task Manager</span>
+        </a>
+        </div>
+    </nav>
+    <div class="container " [ngClass]="getClassObject()" #container>
+        <div class="form-container sign-up-container" >
+            <form #f="ngForm" (ngSubmit)="save(f)">
+                <h2>Request for Addition</h2>
+                <div >
+                    
+                </div>
+                <div >
+                    <input type="email" placeholder="Email"  class="form-control" name="email" [(ngModel)]="user. Email" #e="ngModel" required pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]{2,7}" />
+                    <div *ngIf="e.invalid && e.touched" class="alert alert-danger">
+                        <div *ngIf="e.errors?.['required']">Email is required</div>
+                        <div *ngIf="e.errors?.['pattern']">Invalid email format</div>
+                    </div>
+                </div>
+                <div >
+                    <input type="text" placeholder="group"name="password"  class="form-control" [(ngModel)]="user.password" #p="ngModel"  required />
+                    <div *ngIf="p.invalid && p.touched" class="alert alert-danger">
+                        <div *ngIf="p.errors?.['required']">Password is required</div>
+                        
+                    </div>
+                </div>
+                <button  type="submit" #signUp [disabled]="loading || f.invalid">
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm me-1"></span>
+                    Request
+                </button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in-container" >
+            <form  #fr="ngForm" (ngSubmit)="onSubmit(fr)">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    
+                </div>
+                <span>or use your account</span>
+                <div >
+                    <input type="email" placeholder="Email"name="email" class="form-control" [(ngModel)]="user. Email" #e1="ngModel" required pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]{2,7}" />
+                    <div *ngIf="e1.invalid &&e1.touched " class="alert alert-danger">
+                        <div *ngIf="e1.errors?.['required']">Email is required</div>
+                        <div *ngIf="e1.errors?.['pattern']">Invalid email format</div>
+                    </div>
+                </div>
+                <div >
+                    <input type="password" name="password" class="form-control" placeholder="Password" [(ngModel)]="user.password" #p1="ngModel" required  minlength="8" />
+                    <div *ngIf="p1.invalid && p1.touched" class="alert alert-danger">
+                        <div *ngIf="p1.errors?.['required']">Password is required</div>
+                    </div>
+                </div>
+                <a routerLink="#">Forgot your password?</a>
+                <button #signIn  type="submit" [disabled]="fr.invalid || loading">
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm me-1"></span>
+                    Sign In
+                </button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" (click)="annimationSingUp()" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello !</h1>
+                    <p>Enter your personal details and your request for addition will be processed by an admin.</p>
+                    <button  class="ghost" id="signUp" (click)="annimationSingUp()">
+                        Request
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>
+            Created for<i class="fa fa-heart"></i> 
+            <a target="_blank" href="#">Test App</a>
+            
+            
+        </p>
+    </footer>
+</div>

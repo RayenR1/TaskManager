@@ -1,0 +1,77 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 0.5rem;
+}
+
+.stat-card {
+    flex-grow: 1;
+    min-width: 100px;
+    text-align: center;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+.bg-warning {
+    background-color: #ffc107 !important;
+}
+
+.bg-success {
+    background-color: #28a745 !important;
+}
+
+.bg-info {
+    background-color: #17a2b8 !important;
+}
+
+.chart-card {
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+.task-card {
+    background-color: #ffffff;
+    border: 1px solid #e3e6f0;
+    border-radius: 0.25rem;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}

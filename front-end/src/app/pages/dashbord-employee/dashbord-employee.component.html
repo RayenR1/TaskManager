@@ -1,0 +1,121 @@
+<div class="container-fluid">
+    <div class="row my-3">
+        <div class="col-12">
+            <h2>Hello ! You are doing great. Keep going!</h2>
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <div class="col-lg-3">
+            <div class="card shadow-sm bg-danger text-white text-center">
+                <div class="card-body">
+                    <h5 class="card-title">To Do</h5>
+                    <p class="card-text">{{enattente}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card shadow-sm bg-warning text-white text-center">
+                <div class="card-body">
+                    <h5 class="card-title">In Progress</h5>
+                    <p class="card-text">{{encours}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card shadow-sm bg-success text-white text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Completed</h5>
+                    <p class="card-text">{{termine}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card shadow-sm bg-info text-white text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Task Validated</h5>
+                    <p class="card-text">{{historique}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <div class="col-lg-9">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Performance</h5>
+                    <p-chart type="bar" [data]="data" [options]="options"></p-chart>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card shadow-sm text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Overall Progress</h5>
+                    <p-chart type="doughnut" [data]="data" [options]="options" style="width: 150px; height: 150px;"></p-chart>
+                    <p *ngIf="encours+termine+enattente!=0">{{(termine)/(encours+termine+enattente)*100 |  number:'1.1-1'}}%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <div class="col-lg-12">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Task Management</h5>
+                    <p-pickList 
+                        [source]="sourceTasks" 
+                        [target]="targetTasks" 
+                        sourceHeader="Available Tasks" 
+                        targetHeader="Selected Tasks" 
+                        [dragdrop]="true" 
+                        [responsive]="true" 
+                        [sourceStyle]="{ height: '30rem' }"
+                        [targetStyle]="{ height: '30rem' }" 
+                        filterBy="nomTache" 
+                        sourceFilterPlaceholder="Search by nomTache" 
+                        targetFilterPlaceholder="Search by nomTache" 
+                        breakpoint="1400px">
+                            <ng-template let-task pTemplate="item">
+                                <div class="card task-card p-2 mb-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="task-info">
+                                            <h6 class="mb-1">Task: {{ task.nomTache }}</h6>
+                                            <small>Priorite: {{ task.priorite }}</small>*
+                                            <small>State: {{ task.etat }}</small>
+                                        </div>
+                                        <span class="font-bold text-900">DeadLine: {{ task.dateFin |date:"dd-MM-yyyy" }}</span>
+                                    </div>
+                                    <div class="flex pt-4 justify-content-between">
+                                        <p-button (onClick)="onPrev(task)" label="Back" severity="secondary" icon="pi pi-arrow-left" *ngIf="task.active>0"></p-button>
+                                        <p-button (onClick)="onNext(task)" label="Next" icon="pi pi-arrow-right"  iconPos="right" *ngIf="task.active<2&&task.active!=1"></p-button>
+                                        <p-button (onClick)="onNext(task)" label="Validate" severity="success" icon="pi pi-check"  *ngIf="task.active==1"></p-button>
+                                    </div>
+                                </div>
+                            </ng-template>
+                            <ng-template pTemplate="targetItem" let-task>
+                                <div class="card task-card p-2 mb-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="task-info">
+                                            <h6 class="mb-1">Task: {{ task.nomTache }}</h6>
+                                            <small>Priorite: {{ task.priorite }}</small>
+                                            <small>State: {{ task.etat }}</small>
+                                        </div>
+                                        <span class="font-bold text-900">DeadLine: {{  task.dateFin| date:"dd-MM-yyyy" }}</span>
+                                    </div>
+                                    <div class="flex pt-4 justify-content-between">
+                                        <p-button (onClick)="onPrev(task)" label="Back" severity="secondary" icon="pi pi-arrow-left" *ngIf="task.active>0"></p-button>
+                                        <p-button (onClick)="onNext(task)" label="Next" icon="pi pi-arrow-right" iconPos="right" *ngIf="task.active<2&&task.active!=1"></p-button>
+                                        <p-button (onClick)="onNext(task)" label="Validate" severity="success" icon="pi pi-check"  *ngIf="task.active==1"></p-button>
+                                    </div>
+                                    
+                                </div>
+                            </ng-template>
+                    </p-pickList>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

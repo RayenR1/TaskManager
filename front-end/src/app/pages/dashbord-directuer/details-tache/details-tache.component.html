@@ -1,0 +1,126 @@
+<div class="card">
+    <form #f="ngForm" (ngSubmit)="onsubmit()">
+        <div class="mb-4">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <p-inputGroup>
+                        <input 
+                            type="text" 
+                            pInputText 
+                            placeholder="Task Name" 
+                            class="form-control" 
+                            name="projectname" 
+                            [(ngModel)]="tache.nomTache"  
+                            #fn="ngModel" 
+                            required
+                        />
+                    </p-inputGroup>
+                    <div *ngIf="fn.errors?.['required'] && fn.touched" class="invalid-feedback">
+                        Please enter a task name
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <p-inputGroup>
+                        <input 
+                            type="text" 
+                            pInputText 
+                            placeholder="Task Type" 
+                            class="form-control" 
+                            name="tasktype" 
+                            [(ngModel)]="tache.type"  
+                            #ft="ngModel" 
+                            required
+                        />
+                    </p-inputGroup>
+                    <div *ngIf="ft.errors?.['required'] && ft.touched" class="invalid-feedback">
+                        Please enter a task type
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <p-dropdown 
+                        [options]="priorites" 
+                        [(ngModel)]="tache.priorite"
+                        optionLabel="name" 
+                        optionValue="value"
+                        name="priority" 
+                        placeholder="Select Priority" 
+                        class="w-100" 
+                        required
+                    ></p-dropdown>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <p-floatLabel>
+                        <p-calendar 
+                            [(ngModel)]="tache.dateDebut" 
+                            inputId="datedebut" 
+                            name="dateDebut" 
+                            dateFormat="dd/mm/yy"
+                            class="w-100" 
+                            required
+                        ></p-calendar>
+                        <label for="datedebut">Start Date</label>
+                    </p-floatLabel>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <p-floatLabel>
+                        <p-calendar 
+                            [(ngModel)]="tache.dateFin" 
+                            inputId="datefin" 
+                            name="dateFin" 
+                            dateFormat="dd/mm/yy"
+                            class="w-100" 
+                            required
+                        ></p-calendar>
+                        <label for="datefin">Deadline Date</label>
+                    </p-floatLabel>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <p-floatLabel>
+                <textarea 
+                    id="float-input" 
+                    rows="5" 
+                    pInputTextarea 
+                    class="form-control" 
+                    [(ngModel)]="tache.description" 
+                    name="description" 
+                    required
+                ></textarea>
+                <label for="float-input">Task Description</label>
+            </p-floatLabel>
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <button  
+                pButton 
+                pRipple 
+                label="Return" 
+                rounded="true" 
+                type="button"
+                class="p-button mr-3" 
+                style="width: 100px;" 
+                routerLink="/dashbordDirector/listProjet" 
+                styleClass="p-button-secondary"
+            ></button>
+            <div>
+                <p-toast />
+                <button 
+                    pButton 
+                    pRipple 
+                    label="Save" 
+                    class="p-button-success mr-3" 
+                    style="width: 100px;" 
+                    [disabled]="f.invalid" 
+                    type="submit"
+                ></button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,38 @@
+<div class="card container">
+    <div class="card-header">User Details</div>
+  
+    <div class="card-body">
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">ID:</th>
+            <td>{{user.id}}</td>
+          </tr>  
+          <tr>
+            <th scope="row">First Name:</th>
+            <td>{{user.nom}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Last Name:</th>
+            <td>{{user.prenom}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Email:</th>
+            <td colspan="2">{{user.email}}</td>
+          </tr>
+          <tr>
+            <th scope="row">roles:</th>
+            <td colspan="2" ><span *ngFor="let role of user.roles"> {{role.name}} | </span></td>
+          </tr>
+          <tr>
+            <th scope="row">Teams:</th>
+            <td ><span *ngFor="let team of user.equipes">{{team.nom}} | </span></td>
+          </tr>
+        </tbody>
+      </table>
+      <a routerLink="../../listusers" class="btn btn-primary">Return</a>
+    </div>
+  
+  
+  
+</div>

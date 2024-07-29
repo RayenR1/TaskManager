@@ -1,0 +1,13 @@
+.custom-title {
+    font-size: 2.5rem; /* Adjusts the font size */
+    /* Sets the text color to Bootstrap's primary color */
+    font-weight: bold; /* Makes the text bold */
+    margin-top: 20px; /* Adds top margin */
+    margin-bottom: 20px; /* Adds bottom margin */
+    text-align: center; /* Centers the text */
+    text-transform: uppercase; /* Transforms text to uppercase */
+    letter-spacing: 1px; /* Adds space between letters */
+}
+.spacer-40 {
+    height: 40px;
+}

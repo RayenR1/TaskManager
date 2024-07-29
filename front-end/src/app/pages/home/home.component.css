@@ -1,0 +1,30 @@
+.hero-section {
+    background: url('../../../../public/5137774.webp') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.highlight {
+    color: #FF4B2B; /* Replace with your desired highlight color */
+}
+
+.icon-highlight {
+    color: #FF4B2B; /* Replace with your desired icon color */
+    margin-right: 10px;
+}

@@ -1,0 +1,86 @@
+.custom-card {
+    background-color: #ffffff; /* Couleur de fond */
+    border: 1px solid #dee2e6; /* Bordure */
+    border-radius: 3px; /* Bordure arrondie */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Ombre */
+    margin-bottom: 1.5rem; /* Marge en bas */
+    padding: 1.25rem; /* Padding interne */
+}
+
+.custom-container {
+    width: 90%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.custom-flex {
+    display: flex;
+}
+
+.custom-justify-content-center {
+    justify-content: center;
+}
+
+.custom-mb-2 {
+    margin-bottom: 2rem;
+}
+
+.custom-form-control {
+    /* Custom styles for form control */
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+}
+
+.custom-form-control-sm {
+    /* Custom styles for small form control */
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.custom-align-items-center {
+    align-items: center;
+}
+
+.custom-list-group-item {
+    /* Custom styles for list group item */
+    display: flex;
+    justify-content: space-between;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.custom-table-even-row {
+    background-color: #f2f2f2;
+}
+
+.custom-table-odd-row {
+    background-color: #ffffff;
+}
+
+.custom-avatar {
+    margin-right: 0.5rem;
+}
+
+.custom-mr-2 {
+    margin-right: 0.5rem;
+}
+
+.custom-button-group {
+    display: flex;
+    gap: 0.5rem; /* Adjust the gap between buttons */
+}
+.p-button-rounded {
+    border-radius: 50%;
+}

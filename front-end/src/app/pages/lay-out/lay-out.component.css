@@ -1,0 +1,32 @@
+.bgc {
+    background: #eee;
+    padding: 20px;
+}
+
+.navbar {
+    background: radial-gradient(circle, #FF4B2B, #FF416C);
+    margin-bottom: 10px;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: white !important;
+}
+
+.navbar .nav-link.active {
+    color: #FF4B2B !important;
+    background-color: white !important;
+    border-radius: 5px;
+}
+
+.navbar .btn-warning {
+    color: black;
+    background-color: #FFDD57;
+    border-color: #FFDD57;
+}
+
+.navbar .btn-warning:hover {
+    color: black;
+    background-color: #FFC107;
+    border-color: #FFC107;
+}

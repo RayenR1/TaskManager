@@ -1,0 +1,55 @@
+<div class="dashboard-container">
+  <div class="lists-container">
+    <div class="card xl:flex xl:justify-content-center">
+    <p-orderList 
+    [value]="performence" 
+    [listStyle]="{ 'max-height': '30rem' }" 
+    header="Top Employees Performance" 
+    filterBy="nomTache" 
+    filterPlaceholder="Filter by nomTache">
+    <ng-template let-task pTemplate="item">
+      <div class="task-card flex flex-wrap p-3 align-items-center gap-3">
+        <div class="flex-1 flex flex-column gap-3">
+          <span class="font-bold">Employee Id: {{ task.userId }}</span>
+          <div class="flex align-items-center gap-3">
+            <span>Name: {{ task.userName }}</span>
+          </div>
+          <div class="flex align-items-center gap-3">
+              <span>Number of Tasks: {{ task.validatedTasksCount }}</span>
+            </div>
+        </div>
+      </div>
+    </ng-template>
+    </p-orderList>
+  </div>
+
+    <div class="card xl:flex xl:justify-content-center">
+      <p-orderList 
+        [value]="tasks" 
+        [listStyle]="{ 'max-height': '30rem' }" 
+        header="Tasks to validate" 
+        filterBy="nomTache" 
+        filterPlaceholder="Filter by nomTache">
+        <ng-template let-task pTemplate="item">
+          <div class="task-card flex flex-wrap p-3 align-items-center gap-3">
+            <div class="flex-1 flex flex-column gap-3">
+              <span class="font-bold">Task Name: {{ task.nomTache }}</span>
+              <div class="flex align-items-center gap-3">
+                <span>Priority: {{ task.priorite }}</span>
+              </div>
+              <div class="flex align-items-center gap-3">
+                  <span>Realized by employee with ID: {{ task.users }}</span>
+                </div>
+            </div>
+            <div class="task-buttons flex align-items-center gap-3">
+              <p-toast />
+              <button pButton pRipple (click)="valider(task.id)" class="p-button-success">Validate</button>
+              <button pButton pRipple (click)="refuser(task.id)" class="p-button-danger">Refuse</button>
+            </div>
+          </div>
+        </ng-template>                    
+      </p-orderList>
+    </div>
+  </div>
+</div>
+  

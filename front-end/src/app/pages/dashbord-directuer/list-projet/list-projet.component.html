@@ -1,0 +1,216 @@
+<div class="card">
+    <p-toast />
+    <p-table #dt2 [value]="projects" dataKey="id" [tableStyle]="{ 'min-width': '60rem' }" [expandedRowKeys]="expandedRows" >
+        <ng-template pTemplate="caption">
+            <div class="flex flex-wrap justify-content-end gap-2">
+                 <p-button label="Collapse All" icon="pi pi-minus" text (onClick)="collapseAll()" />
+                 <p-button label="Add Project" text [rounded]="true" icon="pi pi-plus" routerLink="../addprojet" />  
+            </div>  
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th style="width: 5rem"></th>
+                <th pSortableColumn="name">Project Name <p-sortIcon field="name" /></th>
+                <th pSortableColumn="nbrTasks">Number of Tasks <p-sortIcon field="price" /></th>
+                <th pSortableColumn="inventoryStatus">Status <p-sortIcon field="inventoryStatus" /></th>
+                <th>Auto distribute</th>
+                <th pSortableColumn="value">Avancement <p-sortIcon field="value" /></th>
+                
+            </tr>
+            <tr>
+                <th style="width: 5rem"></th>
+                <th>
+                    <p-columnFilter 
+                        type="text" 
+                        field="name" 
+                        placeholder="Search by Name" 
+                        ariaLabel="Filter Name" />
+                </th>
+                <th>
+                    <p-columnFilter 
+                        type="text" 
+                        field="nbrTasks" 
+                        placeholder="Search by Number of Tasks" 
+                        ariaLabel="Filter task Number" />
+                </th>
+                <th><div class="custom-flex custom-align-items-center">
+                    <p-columnFilter field="inventoryStatus" matchMode="in" [showMenu]="false"> 
+                      <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                        <p-dropdown [options]="roleOptions"
+                                    [(ngModel)]="selectedRole"
+                                    optionLabel="label"
+                                    optionValue="value" 
+                                    placeholder="Select Status"
+                                    (onChange)="dt2.filter($event.value, 'inventoryStatus', 'contains')"
+                                    >
+                        </p-dropdown>
+                      </ng-template>
+                    </p-columnFilter>
+                </div></th>
+                <th><p-inputSwitch [(ngModel)]="autoOrdenonceur" (onChange)="ordenancer($event)"/></th>
+                <th></th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product let-expanded="expanded">
+            <tr>
+                <td>
+                    <p-button type="button" pRipple [pRowToggler]="product" [text]="true" [rounded]="true" [plain]="true" [icon]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'" />
+                </td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.nbrTasks}}</td>
+                <td>
+                    <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product.inventoryStatus)" />
+                </td>
+                <td class="button-container"><p-button label="Details" icon="pi pi-info" [routerLink]="['../projectDetails', product.id]"/><p-toast /><p-confirmPopup /><p-button (click)="confirm2($event,product.id)"  label="Delete" severity="danger" [outlined]="true" /></td>
+                <td><p-meterGroup [value]="product.value" /></td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="rowexpansion" let-product>
+            <tr>
+                <td colspan="7">
+                    <div class="p-3">
+                        <p-table [value]="product.tasks" dataKey="id">
+                            <ng-template pTemplate="header">
+                                <tr>
+                                    <th pSortableColumn="id">Id <p-sortIcon field="id" /></th>
+                                    <th pSortableColumn="name">Task Name <p-sortIcon field="name" /></th>
+                                    <th pSortableColumn="dateFin">Deadline<p-sortIcon field="dateFin" /></th>
+                                    <th pSortableColumn="priorite">Priorite <p-sortIcon field="priorite" /></th>
+                                    <th pSortableColumn="status">Status <p-sortIcon field="status" /></th>
+                                    <th style="width: 4rem"><p-button label="Add Task" [rounded]="true" icon="pi pi-plus"   [routerLink]="['../addtache', product.id]"/></th>
+                                </tr>
+                            </ng-template>
+                            <ng-template pTemplate="body" let-order>
+                                <tr>
+                                    <td>{{ order.id }}</td>
+                                    <td>{{ order.name }}</td>
+                                    <td>{{ order.dateFin | date: 'dd-MM-yyyy'}}</td>
+                                    <td>{{ order.priorite}}</td>
+                                    <td>
+                                        <p-tag [value]="order.status" [severity]="getSeverity(order.status)" />
+                                    </td>
+                                    <td >
+                                        <div class="button-container">
+                                            <div>
+                                                <p-button type="button" (click)="showDialog(product.id,order.id)" icon="pi pi-info" />
+                                                <p-dialog 
+                                                    header="Details" 
+                                                    [(visible)]="visible" 
+                                                    [modal]="true" 
+                                                    [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" 
+                                                    [style]="{ width: '50vw' }" 
+                                                    [draggable]="false" 
+                                                    [resizable]="false">
+                                                    <div class="task-container">
+                                                        <div class="task-details">
+                                                            <h2>{{ task.nomTache }}</h2>
+                                                            <p><strong>Type:</strong> {{ task.type }}</p>
+                                                            <p><strong>Description:</strong> {{ task.description }}</p>
+                                                            <p><strong>Date de début:</strong> {{ task.dateDebut | date:'dd-MM-yyyy' }}</p>
+                                                            <p><strong>Date de fin:</strong> {{ task.dateFin | date:'dd-MM-yyyy' }}</p>
+                                                            <p><strong>État:</strong> {{ task.etat }}</p>
+                                                            <p><strong>Priorité:</strong> {{ task.priorite }}</p>
+                                                        </div>
+                                                        
+                                                        <div class="user-list">
+                                                            <h3>Utilisateurs associés</h3>
+                                                            <div *ngFor="let user of task.users" class="user-item">
+                                                                <p><strong>Nom:</strong> {{ user.nom }}</p>
+                                                                <p><strong>Prénom:</strong> {{ user.prenom }}</p>
+                                                                <p><strong>Email:</strong> {{ user.email }}</p>
+                                                                <p><strong>Société:</strong> {{ user.societe }}</p>
+                                                                <div class="roles">
+                                                                    <p *ngFor="let role of user.roles" class="role-item">
+                                                                        <strong>Rôle:</strong> {{ role.name }}
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </p-dialog>
+                                            </div>
+                                            <p-button type="button" icon="pi pi-pencil" *ngIf="order.status!='Validated'" severity="warning" [routerLink]="['../taskDetails', product.id,order.id]"/>
+                                            <p-button type="button" icon="pi pi-trash" *ngIf="order.status!='Validated'" severity="danger" (click)="confirm1($event,product.id,order.id)" />   
+                                        </div>  
+                                        <div class="mt-3" *ngIf="order.status=='Not Affected'">
+                                            <p-toast />
+                                            <p-button class="full-width-button" pRipple severity="help"  icon="pi pi-forward" [label]="selecteduser ? selecteduser.name : 'Affect'" (click)="op.toggle($event)" />
+                                            <p-overlayPanel #op [style]="{ width: '450px' }" [showCloseIcon]="true" [ngClass]="'custom-overlaypanel'">
+                                                <ng-template pTemplate="content">
+                                                    <p-table 
+                                                        [value]="Users" 
+                                                        selectionMode="single" 
+                                                        [(selection)]="selecteduser" 
+                                                        (onRowSelect)="onRowSelect($event, op, product.id, order.id)" 
+                                                        [paginator]="true" 
+                                                        [rows]="5" 
+                                                        responsiveLayout="scroll">
+                                                            <ng-template pTemplate="header">
+                                                                <tr>
+                                                                    <th pSortableColumn="id">
+                                                                        ID <p-sortIcon field="price" />
+                                                                    </th>
+                                                                    <th pSortableColumn="nom">
+                                                                        Name <p-sortIcon field="name" />
+                                                                    </th>
+                                                                    
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        <p-columnFilter 
+                                                                            type="text" 
+                                                                            field="id" 
+                                                                            placeholder="Search by Price" 
+                                                                            ariaLabel="Filter Price" />
+                                                                    </th>
+                                                                    <th>
+                                                                        <p-columnFilter 
+                                                                            type="text" 
+                                                                            field="nom" 
+                                                                            placeholder="Search by Name" 
+                                                                            ariaLabel="Filter Name" />
+                                                                    </th>
+                                                                    
+                                                                </tr>
+                                                            </ng-template>
+                                                            <ng-template pTemplate="body" let-rowData let-userr>
+                                                                <tr [pSelectableRow]="rowData">
+                                                                    <td>{{ userr.id }}</td>
+                                                                    <td>
+                                                                        {{ userr.nom }}
+                                                                    </td>  
+                                                                </tr>
+                                                            </ng-template>
+                                                            <ng-template pTemplate="emptymessage">
+                                                                <tr>
+                                                                    <td colspan="6">There are no User with Employee role yet.</td>
+                                                                </tr>
+                                                            </ng-template>
+                                                    </p-table>
+                                                </ng-template>
+                                            </p-overlayPanel>
+                                        </div>
+                                    
+                                    </td>  
+                                    
+                                </tr>
+                            </ng-template>
+                            <ng-template pTemplate="emptymessage">
+                                <tr>
+                                    <td colspan="6">There are no Tasks for this Project yet.</td>
+                                </tr>
+                            </ng-template>
+                        </p-table>
+                    </div>
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="6">There are no Projects yet.</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
+

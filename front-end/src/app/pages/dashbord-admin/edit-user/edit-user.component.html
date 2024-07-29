@@ -1,0 +1,112 @@
+<h1 class="container custom-title ">Edit User form:</h1>
+<div class="container card d-flex justify-content-center ">
+    <form #f="ngForm"  (ngSubmit)="onsubmit(f)" class="row g-3 card-body">
+        <div class="col-md-4">
+        <label for="validationServer01" class="form-label">First name</label>
+        <input type="text" class="form-control " [ngClass]="getClassObject(fn)" id="validationServer01" name="firstname" [(ngModel)]="user.nom"  #fn="ngModel" placeholder=" First name" required>
+        <div *ngIf="!fn.errors?.['required']" class="valid-feedback">
+            Looks good!
+        </div>
+        <div *ngIf="fn.errors?.['required']&&fn.touched" class="invalid-feedback">
+            Please choose a First name
+        </div>
+        </div>
+
+        <div class="col-md-4">
+        <label for="validationServer02" class="form-label">Last name</label>
+        <input type="text" class="form-control " id="validationServer02" [ngClass]="getClassObject(ln)"  name="lastname" [(ngModel)]="user.prenom"  #ln="ngModel" placeholder=" Last name" required>
+        <div *ngIf="!ln.errors?.['required']" class="valid-feedback">
+            Looks good!
+        </div>
+        <div *ngIf="ln.errors?.['required']&&ln.touched" class="invalid-feedback">
+            Please choose a Last name
+        </div>
+        </div>
+
+        <div class="col-md-4">
+        <label for="validationServerUsername" class="form-label">Team</label>
+        <div class="input-group has-validation" >
+            <span class="input-group-text" id="inputGroupPrepend3"></span>
+            <input type="text" class="form-control " id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" [ngClass]="getClassObject(t)"  name="team" [(ngModel)]="equipes"  #t="ngModel" placeholder=" Team " required>
+            <div *ngIf="t.errors?.['required']&&t.touched" id="validationServerUsernameFeedback" class="invalid-feedback">
+            Please choose a Team .
+            </div>
+            <div *ngIf="!t.errors?.['required']" class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-6">
+        <label for="validationServer03" class="form-label">Email</label>
+        <input type="text" class="form-control " id="validationServer03" aria-describedby="validationServer03Feedback" [ngClass]="getClassObject(e)"  name="emaill" [(ngModel)]="user.email"  #e="ngModel" placeholder="Email" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z]{2,7}" required>
+        <div *ngIf="e.errors?.['required']&&e.touched" id="validationServer03Feedback" class="invalid-feedback">
+            Please provide a valid Email.
+        </div>
+        <div *ngIf="e.errors?.['pattern']&&e.touched" id="validationServer03Feedback" class="invalid-feedback">
+            Please provide a valid Email.
+        </div>
+        <div *ngIf="!e.errors?.['required']" class="valid-feedback">
+            Looks good!
+        </div>
+        </div>
+
+        <div class="col-md-3">
+        <label for="validationServer04" class="form-label">password (if you want to change)</label>
+        <input type="password" class="form-control" id="validationServer04" aria-describedby="validationServer04Feedback" [ngClass]="getClassObject(p1)"  name="password11" [(ngModel)]="this.password1"  #p1="ngModel" placeholder="Password" minlength="8" >
+        <div *ngIf="p1.errors&&p1.touched" id="validationServer04Feedback" class="invalid-feedback">
+            Please select a valid password,min length 8.
+        </div>
+        <div *ngIf="!p1.errors?.['required']" class="valid-feedback">
+            Looks good!
+        </div>
+        </div>
+
+        <div class="col-md-3">
+        <label for="validationServer05" class="form-label">Confirm password</label>
+        <input type="password" class="form-control " id="validationServer05" aria-describedby="validationServer05Feedback" [ngClass]="confirmPasswordClassObject(p2)"  name="password22" [(ngModel)]="this.password2"  #p2="ngModel" placeholder="Password" minlength="8" >
+        <div  *ngIf="(p2.errors&&p2.touched)||(!this.equalpassword&&p2.touched)" id="validationServer05Feedback" class="invalid-feedback">
+            Please enter the same password.
+        </div>
+        <div *ngIf="!p2.errors?.['required']&&equalpassword" class="valid-feedback">
+            Looks good!
+        </div>
+        </div>
+
+        <div class="col-12">
+            <h4>Roles:</h4>
+        <div class="form-check">
+            <input class="form-check-input  " type="checkbox"  id="invalidCheck3" aria-describedby="invalidCheck3Feedback" name="admin"  [(ngModel)]="this.admin" >
+            <label class="form-check-label" for="invalidCheck3">
+            Admin
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input " type="checkbox" value="" id="invalidCheck2" aria-describedby="invalidCheck3Feedback" name="director" [(ngModel)]="this.director"  >
+            <label class="form-check-label" for="invalidCheck2">
+            Director
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input " type="checkbox" value="" id="invalidCheck1" aria-describedby="invalidCheck3Feedback" name="employee" [(ngModel)]="this.employee"  >
+            <label class="form-check-label" for="invalidCheck1">
+            Employee
+            </label>
+        </div>
+        </div>
+        <div class="spacer-40"></div>
+        <div class="card container mb-4 ">
+            <h5 class="card-header text-warning">WARNING</h5>
+            <div class="card-body">
+              <h5 class="card-title">Are you sure you want edit this user?</h5>
+              <p class="card-text">If you want to continue the process process, please enter your password.</p>
+              <div class="input-group mb-3 ">
+                <input type="password" class="form-control" placeholder="Password ADMIN" [(ngModel)]="password" [ngClass]="getClassObject(p)" #p="ngModel" name="admin" style="max-width: 300px;" minlength="8" required>
+              </div>
+              <a routerLink="../../listusers" class="btn btn-primary me-2">Cancel</a>
+              <button class="btn btn-warning me-2" [disabled]="f.invalid||!isAnyRoleSelected||!equalpassword" name="delete"  type="submit">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="spacer-40"></div>

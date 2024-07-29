@@ -1,0 +1,59 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lists-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 1rem;
+  flex: 1;
+}
+
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.custom-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-card-icon {
+  margin-bottom: 1rem;
+}
+
+.custom-card-category, .custom-card-title, .custom-card-footer {
+  margin: 0.5rem 0;
+}
+
+.custom-card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.task-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+}

@@ -1,0 +1,35 @@
+<nav class="navbar  navbar-expand-lg bg-body-tertiary nav nav-tabs">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home">Task Manager</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" [hidden]="Admin">
+            <a class="nav-link active" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" aria-current="page" name="dashbordadmin" routerLink="dashbordAdmin/statistics" (click)="admin()" >Dashbord Admin</a>
+          </li>
+          <li class="nav-item " [hidden]="Admin">
+            <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="dashbordAdmin/listusers" (click)="admin()">Users List</a>
+          </li>
+          <li class="nav-item" [hidden]="Admin">
+            <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  routerLink="dashbordAdmin/adduser" (click)="admin()">Add User</a>
+          </li>
+          <li class="nav-item" [hidden]="Director">
+            <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  routerLink="dashbordDirector/stat" (click)="director()">Dashbord Director</a>
+          </li>
+          <li class="nav-item" [hidden]="Director">
+            <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  routerLink="dashbordDirector/listProjet" (click)="director()">Project Management </a>
+          </li>
+          <li class="nav-item" [hidden]="Employee">
+            <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  routerLink="dashboedEmploye" (click)="employee()">Dashbord Employee </a>
+          </li>
+        </ul>
+        <button class="btn btn-warning" (click)="logout()">Logout</button>
+       
+      </div>
+    </div>
+</nav>
+<div class="bgc">
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,26 @@
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.p-inputgroup {
+    display: flex;
+    align-items: center;
+}
+
+.p-inputgroup > .p-button-success {
+    margin-right: 8px;
+}
+
+.p-floatlabel {
+    width: 100%;
+}
+
+textarea.form-control {
+    width: 100%;
+    resize: none;
+}
+
+button.p-button-success {
+    margin-left: 8px;
+}

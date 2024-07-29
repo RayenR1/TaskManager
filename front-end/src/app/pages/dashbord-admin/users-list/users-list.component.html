@@ -1,0 +1,127 @@
+<div class="custom-card custom-container">
+    <p-table
+        #dt2
+        [value]="listUsres"
+        dataKey="id"
+        [rows]="10"
+        [rowsPerPageOptions]="[10, 25, 50]"
+        [loading]="loading"
+        [paginator]="true"
+        [globalFilterFields]="['nom', 'id', 'roles', 'status']"
+        [tableStyle]="{ 'min-width': '75rem' }"
+        class="custom-table"
+        [expandedRowKeys]="expandedRows"
+    >   
+        <ng-template pTemplate="caption">
+            <div class="custom-flex custom-justify-content-center custom-mb-2">
+                <p-iconField iconPosition="left"> 
+                    <input
+                        pInputText
+                        type="text"
+                        (input)="applyGlobalFilter($event)"
+                        placeholder="     Search keyword"
+                        class="custom-form-control"
+                    />
+                </p-iconField>
+            </div>
+        </ng-template>
+
+        <ng-template pTemplate="header">
+            <tr>
+                <th style="width:15%">Name <span pSortableColumn="name"><p-sortIcon field="name"> </p-sortIcon></span></th>
+                <th style="width:15%">ID <span pSortableColumn="id"><p-sortIcon field="id"> </p-sortIcon></span></th>
+                <th style="width:15%">Roles</th>
+                <th style="width:15%">Status</th>
+                <th style="width:15%"></th>
+            </tr>
+            <tr>
+                <th>
+                    <p-columnFilter
+                        type="text"
+                        field="nom"
+                        placeholder="Search by name"
+                        ariaLabel="Filter Name"
+                        class="custom-form-control-sm"
+                    ></p-columnFilter>
+                </th>
+                <th>
+                    <span><p-columnFilter
+                        type="text"
+                        field="id"
+                        placeholder="Search by ID"
+                        ariaLabel="Filter ID"
+                        class="custom-form-control-sm"
+                    ></p-columnFilter></span>
+                </th>
+                <th>
+                    <div class="custom-flex custom-align-items-center">
+                        <p-columnFilter field="role" matchMode="in" [showMenu]="false"> 
+                          <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                            <p-dropdown [options]="roleOptions"
+                                        [(ngModel)]="selectedRole"
+                                        optionLabel="label"
+                                        optionValue="value" 
+                                        placeholder="Select Role"
+                                        (onChange)="dt2.filter(selectedRole, 'roles', 'contains')"
+                                        >
+                            </p-dropdown>
+                          </ng-template>
+                        </p-columnFilter>
+                    </div>
+                </th>
+                <th>
+                    <p-columnFilter type="boolean" field="online"></p-columnFilter>
+                </th>
+                <th></th>
+            </tr>
+        </ng-template>
+
+        <ng-template pTemplate="body" let-customer let-even="even" let-odd="odd" class="custom-list-group-item">
+            <tr [class]="even ? 'custom-table-even-row' : 'custom-table-odd-row'">
+                <td>
+                    <p-avatar 
+                        icon="pi pi-user" 
+                        class="custom-avatar mr-2" 
+                        [style]="{ 'background-color': '#dee9fc', color: '#1a2551' }" 
+                        shape="circle"
+                    />
+                    <span class="ml-2"> {{customer.nom}} {{customer.prenom}}</span>
+                </td>
+                <td>
+                    <span class="ml-2">{{ customer.id }}</span>
+                </td>
+                <td>
+                    <span class="ml-2">{{ customer.roles }}</span>
+                </td>
+                <td>
+                    <p-tag [value]="etat(customer.online)" [severity]="getSeverity(customer.online)"></p-tag>
+                </td>
+                <td class="custom-button-group"> 
+                    <button pButton type="button" 
+                            icon="pi pi-info-circle" 
+                            class="p-button-rounded custom-mr-2"
+                            [routerLink]="['../detailsuser', customer.id]"
+                            >
+                    </button>
+                    <button pButton type="button" 
+                            icon="pi pi-user-edit" 
+                            class="p-button-rounded p-button-warning custom-mr-2"
+                            [routerLink]="['../edituser', customer.id]"
+                            >
+                    </button>
+                    <button pButton type="button" 
+                            icon="pi pi-trash" 
+                            class="p-button-rounded p-button-danger"
+                            [routerLink]="['../deleteuser', customer.id]"
+                            >
+                    </button>
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="5">No User found.</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
